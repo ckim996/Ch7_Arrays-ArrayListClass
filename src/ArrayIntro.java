@@ -11,7 +11,7 @@ public class ArrayIntro
 
         System.out.println("Input 3 Values:");
         Scanner sc = new Scanner(System.in);
-        for(int i = 0; i<=num1.length-1; i++)
+        for(int i = 0; i<num1.length; i++)
         {
             num1[i] = sc.nextInt();
         }
@@ -23,13 +23,13 @@ public class ArrayIntro
         }
         System.out.println();
 
-        System.out.println("Input 6 values: ");
-        for(int j = 0; j<=TEST-1; j++)
+        System.out.println("Input 5 values: ");
+        for(int j = 0; j<TEST; j++)
         {
             num2[j] = sc.nextInt();
         }
 
-        for(int z = 0; z<= TEST-1; z++)
+        for(int z = 0; z< TEST; z++)
         {
             System.out.print(num2[z] + " ");
         }
