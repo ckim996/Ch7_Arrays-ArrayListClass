@@ -19,7 +19,7 @@ public class ComparingArrays
             arrayEqual = false;
         }else{
             arrayEqual = true;
-        } 
+        }
 
         while(arrayEqual && (i < fArray.length))
         {
