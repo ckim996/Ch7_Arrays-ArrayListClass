@@ -26,22 +26,14 @@ public class DisplayingArray
 
         // Printing the sum of each column
         System.out.println("\nPrinting out the sum of each column: ");
-        int totalC = 0;
-        for(int j = 0 ; j < num[0].length; j++)
-        {
-            totalC = 0;
-            for(int i = 0; i < num.length;i++)
-            {
-                totalC += num[i][j];
-            }
-            System.out.println("Total of columns: " + j + " is " + totalC);
-        }
+        arrSumCol(num);
     }
 
     public static void showArray(int[][] arr)
     {
         for(int i = 0 ; i < arr.length; i++)
         {
+
             for(int j = 0 ; j < arr[i].length; j++)
             {
                 System.out.print(arr[i][j] + " ");
@@ -73,8 +65,22 @@ public class DisplayingArray
             {
                 total += arr[i][j];
             }
-            System.out.println("total of row " + i + " is " + total);
+            System.out.println("total of row " + (i+1) + " is " + total);
         }
 
+    }
+
+    public static void arrSumCol(int[][] arr)
+    {
+        int total = 0;
+        for(int j = 0; j < arr[0].length; j++)
+        {
+            total = 0;
+            for(int i = 0; i < arr.length; i++)
+            {
+                total += arr[i][j];
+            }
+            System.out.println("total of col " + (j+1) + " is " + total);
+        }
     }
 }
