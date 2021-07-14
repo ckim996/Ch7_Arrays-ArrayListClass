@@ -4,6 +4,14 @@ public class binarySearch
     {
         int pos;
         int[] arr = {12,17,31, 52, 87,120, 200};
+
+        System.out.print("Contents inside the array: ");
+        for(int i=0; i<arr.length;i++)
+        {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+
         System.out.print("In which position is 87 located in the array: ");
         pos = binarySearch(arr,87);
         System.out.println(pos);

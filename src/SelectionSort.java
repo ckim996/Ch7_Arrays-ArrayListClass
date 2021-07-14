@@ -21,10 +21,12 @@ public class SelectionSort
     public static void selectionSortASC(int[] arr)
     {
         int startScan, minIndex, minValue, i;
+        // for loop for the array starting from 0 to arr.length-1
         for(startScan = 0; startScan < (arr.length-1); startScan++)
         {
             minIndex = startScan;
             minValue = arr[startScan];
+            // for loop starting from the numbers after the startScan to compare and swap if needed
             for(i = startScan + 1; i < arr.length; i++)
             {
                 if(arr[i] < minValue)
