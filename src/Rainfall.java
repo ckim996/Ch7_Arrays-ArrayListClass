@@ -11,7 +11,7 @@ public class Rainfall
         System.out.println("Please input the rainfall data in order from January to December: ");
         for(int i = 0; i < NUM_MONTHS; i++)
         {
-            System.out.println("Enter the rainfall data (mm) for month " + (i+1));
+            System.out.println("Enter the rainfall data (mm) for month " + (i+1) + ": ");
             arr[i] = sc.nextDouble();
         }
 
