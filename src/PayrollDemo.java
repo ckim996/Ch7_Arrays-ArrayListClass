@@ -23,7 +23,7 @@ public class PayrollDemo
             arr[i] = n;
         }
 
-        int menuNum = 0;
+        int menuNum;
         do {
             System.out.print("\n\nWelcome to Payroll Demo Program" +
                     "\n1) Display Employee #s:" +
@@ -85,7 +85,7 @@ public class PayrollDemo
                 System.out.println("You have entered the wrong number!");
             }
 
-        }while(menuNum == 1 || menuNum ==2 || menuNum == 3 || menuNum == 4 || menuNum == 5);
+        }while(menuNum == 1 || menuNum ==2 || menuNum == 3 || menuNum == 4);
 
     }
 
